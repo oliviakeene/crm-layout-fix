@@ -1,4 +1,4 @@
-const allowStyleOverride = window.location.href.includes("insightly/reports");
+const allowStyleOverride = window.location.href.toLowerCase().includes("insightly.com/reports");
 
 async function createStyleElement() {
     console.log("createStyleElement");
@@ -7,12 +7,8 @@ async function createStyleElement() {
         let style = document.createElement('style');
         style.type = 'text/css';
         style.textContent = `
-        a::after {
-            content: "🇺🇸"
-        }
         #main-container {
             width:1000vw!important;
-            background: blue!important;
         }
         #report-editor .k-grid-content { width: 1000vh!important }
         `;
