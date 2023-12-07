@@ -1,0 +1,17 @@
+{
+    "name": "CRM Layout Fix",
+    "version": "1.0.0",
+    "description": "Fix unreadable report columnss",
+    "manifest_version": 3,
+    "author": "Olivia Jovanovic",
+    "action": {
+        "commented_default_popup": "index.html",
+        "default_title": "CRM Layout Fix"
+    },
+    "content_scripts": [
+        {
+        "matches" : ["http://*/*", "https://*/*"],
+        "js" : ["index.js"]
+        }
+    ]
+}
