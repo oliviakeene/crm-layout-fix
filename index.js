@@ -39,9 +39,22 @@ async function createStyleElement() {
         #main-container {
             width:1000vw!important;
         }
+        #toolbar .btn-toolbar {
+            float: none!important;
+            margin-left: 20px;
+        }
+        #toolbar .toolbar-title {
+            margin-right: 20px!important;
+        }
         #grid {
             height: ${calculatedHeightForGrid}!important;
             max-height: ${calculatedHeightForGrid}!important;
+        }
+        #wrapper #sidebar {
+            position: absolute!important;
+        }
+        #appname::after {
+            content: "  🇺🇸"
         }
         `;
         document.head.appendChild(style);
