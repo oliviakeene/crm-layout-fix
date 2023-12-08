@@ -1,7 +1,7 @@
 {
     "name": "CRM Layout Fix",
     "version": "1.0.0",
-    "description": "Fix unreadable report columnss",
+    "description": "Fix unreadable report columns",
     "manifest_version": 3,
     "author": "Olivia Jovanovic",
     "action": {
