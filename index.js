@@ -37,7 +37,7 @@ async function createStyleElement() {
         style.type = 'text/css';
         style.textContent = `
         #main-container {
-            width:1000vw!important;
+            width:500vw!important;
         }
         #toolbar .btn-toolbar {
             float: none!important;
@@ -52,9 +52,6 @@ async function createStyleElement() {
         }
         #wrapper #sidebar {
             position: absolute!important;
-        }
-        #appname::after {
-            content: "  🇺🇸"
         }
         `;
         document.head.appendChild(style);
